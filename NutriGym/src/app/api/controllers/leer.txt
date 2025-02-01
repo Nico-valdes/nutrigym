@@ -1,0 +1,4 @@
+Aqui se guardan las funciones controladoras (controllers) que manejan la lógica principal de tu aplicación cuando llega una solicitud HTTP. Los controladores son responsables de procesar los datos, interactuar con la base de datos (a través de los modelos), y devolver una respuesta adecuada al cliente (generalmente en formato JSON).
+
+¿Qué es un controlador?
+Un controlador es una función o conjunto de funciones que procesan las solicitudes HTTP entrantes, ejecutan la lógica de negocio y devuelven una respuesta al cliente. La idea es mantener la lógica de las rutas separada del código que realiza el trabajo principal, lo que permite una organización más limpia y un código más mantenible.

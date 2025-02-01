@@ -1,0 +1,2 @@
+¿Qué es un servicio?
+Un servicio en el desarrollo backend es una capa de código que contiene la lógica de negocio de tu aplicación. Se encarga de realizar operaciones complejas, como manejar datos, realizar cálculos, interactuar con APIs externas, o trabajar con la base de datos, mientras mantiene a los controladores ligeros y enfocados únicamente en gestionar solicitudes y respuestas HTTP.

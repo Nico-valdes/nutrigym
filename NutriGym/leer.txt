@@ -1,0 +1,15 @@
+Comandos si es que le pide instalar dependecias:
+
+npm install lucide-react
+npm install tailwind-merge
+npm install next-auth
+npm install framer-motion
+npm install concurrency
+npm install express
+npm install cors
+npm install express-validator
+npm i -D daisyui@latest
+
+y si queres instalarlo todo de una:
+
+npm install lucide-react tailwind-merge next-auth framer-motion

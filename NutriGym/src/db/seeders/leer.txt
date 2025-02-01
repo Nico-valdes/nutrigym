@@ -1,0 +1,8 @@
+El directorio seeders/ en una estructura de proyecto con Sequelize se utiliza para almacenar semillas de datos (data seeds). Las semillas son datos predefinidos que puedes insertar automáticamente en la base de datos. Esto es útil para inicializar una base de datos con datos de prueba o configuraciones predeterminadas, como usuarios iniciales, configuraciones de permisos, roles, entre otros.
+
+¿Qué se guarda en seeders/?
+    1. Archivos de semillas: Cada archivo en el directorio seeders/ contiene instrucciones para poblar una tabla con datos. Estos archivos generalmente incluyen métodos para insertar (sembrar) y eliminar (borrar) datos en la base de datos.
+
+    2.Estructura de los archivos de semilla:
+        - up: Método que define lo que debe hacerse cuando se ejecuta el "seed". Esto generalmente involucra insertar datos en la base de datos.
+        - down: Método que define cómo deshacer los cambios hechos en up. Esto puede incluir borrar los datos insertados o revertir otros cambios.

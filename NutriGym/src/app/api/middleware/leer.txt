@@ -1,0 +1,10 @@
+Este directorio se utiliza para almacenar archivos que contienen middleware, funciones que se ejecutan entre una solicitud HTTP y la respuesta en una aplicación web.
+
+¿Qué es un middleware?
+Un middleware es una función que tiene acceso al objeto de solicitud (req), al objeto de respuesta (res) y a la siguiente función de middleware en el ciclo de solicitudes/respuestas de una aplicación. Esta función puede realizar varias tareas como:
+
+Verificación de autenticación: Comprobar si el usuario está autenticado antes de permitirle acceder a ciertos recursos.
+Logging: Registrar las solicitudes para propósitos de auditoría.
+Gestión de errores: Interceptar y manejar errores antes de enviar la respuesta.
+Validación de datos: Verificar que los datos enviados en una solicitud sean correctos.
+Configuración de cabeceras: Añadir cabeceras a la respuesta HTTP.

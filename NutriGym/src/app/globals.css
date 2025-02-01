@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+.bgperso {
+    background-color:hsla(17,0%,100%,1);
+    background-image:
+    radial-gradient(at 16% 82%, hsla(333,0%,90%,1) 0px, transparent 50%),
+    radial-gradient(at 15% 5%, hsla(277,0%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 98% 97%, hsla(15,3%,34%,1) 0px, transparent 50%),
+    radial-gradient(at 28% 69%, hsla(86,0%,39%,1) 0px, transparent 50%),
+    radial-gradient(at 48% 28%, hsla(257,0%,100%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 10%, hsla(113,0%,94%,1) 0px, transparent 50%),
+    radial-gradient(at 98% 6%, hsla(82,0%,82%,1) 0px, transparent 50%);
+}
+
+.ChatBot {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    padding: 12px;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0A0A0A;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.chatbot-content {
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 80px;
+    /* Ajusta según prefieras para que el contenido no se superponga con el botón */
+    right: 20px;
+    /* Pone el contenido a la derecha */
+    width: 280px;
+    /* Ajusta el ancho del chat */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    /* Asegura que el contenido esté por debajo del botón */
+}
+
+.chatbot-content.open {
+    display: block;
+    opacity: 1;
+    max-height: 500px;
+    /* Ajusta este valor según el contenido */
+}
+
+.chatbot-content.close {
+    opacity: 0;
+    max-height: 0;
+    transition-delay: 2ms;
+    /* Ajusta el tiempo de retraso si es necesario */
+}
